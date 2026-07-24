@@ -1,0 +1,53 @@
+pulling images:
+
+    sudo docker images
+
+    sudo docker pull "IMAGE-FROM-DOCKER-HUB"
+
+run with docker 
+
+    sudo docker build -t "IMAGE" .
+
+    sudo docker images
+
+    sudo docker run -d --name "NAME" -p port:port "NEW-IMAGE-NAME" .
+
+    sudo docker ps
+
+    sudo docker logs "CONTAINER ID"
+
+remove image:
+
+    sudo docker rmi "IMAGE"
+
+remove container:
+
+    sudo docker ps -a
+
+    sudo docker stop "CONTAINER ID"
+
+    sudo docker rm "CONTAINER ID"
+
+check logs:
+
+     sudo docker exec -it "CONTAINER ID" bash
+
+     root@CONTAINER ID :/app# ls -la
+
+using existing docker hub image:
+
+    sudo docker pull "IMAGE-FROM-DOCKER-HUB"
+
+    sudo docker run -d --name "NAME" -p 80:80 "IMAGE NAME"
+
+    sudo docker ps
+
+Build using Docker-compose file:
+
+    sudo docker compose up --build
+
+Up and down Docker-compose file
+
+    sudo docker compose up
+
+    sudo docker compose down
