@@ -1,0 +1,9 @@
+1. COPY vs ADD
+    COPY: Copies files/directories from your local machine into the Docker image.
+    ADD: Also copies files, but has extra features like automatically extracting local .tar files and supporting URLs.
+2. Why is COPY preferred?
+    COPY is preferred because it is simple, clear, and predictable. It only copies what you specify without extra behavior.
+3. Easy rule to remember
+    COPY = Just copy files
+    ADD = Copy + extra features
+    Use COPY by default; use ADD only when you need its extra features.
